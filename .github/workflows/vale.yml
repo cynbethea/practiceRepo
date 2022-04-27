@@ -3,11 +3,11 @@ on:
   pull_request:
     branches:
       - master
-      - develop
+      - vale_test
   push:
     branches:
       - master
-      - develop
+      - vale_test
 
 jobs:
   prose:
