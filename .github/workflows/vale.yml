@@ -1,13 +1,5 @@
 name: Linting
-on:
-  pull_request:
-    branches:
-      - master
-      - vale_test
-  push:
-    branches:
-      - master
-      - vale_test
+on: [push]
 
 jobs:
   prose:
