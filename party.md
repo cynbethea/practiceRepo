@@ -6,3 +6,4 @@ To be able to work with parties, you will need to understand these key concepts:
 - Party Role; your use-case may mean that you have multiple parties associated with a single subscription. You can assign roles to parties with corresponding permissions. For example, in business banking, customers may choose to invite their accountant to access their account and view the associated payments. Party roles make this possible. You can read more in our key concepts section [parties](/get-started/core_concepts/parties). 
 
 asdfasfa
+
