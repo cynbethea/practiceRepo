@@ -22,3 +22,16 @@ jobs:
         # Required, set by GitHub actions automatically:
         # https://docs.github.com/en/actions/security-guides/automatic-token-authentication#about-the-github_token-secret
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+lint-changelog:
+    name: Lint changelog file
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: Lint changelog file
+      uses: docker://avtodev/markdown-lint:v1 # fastest way
+      with:
+        rules: '/lint/rules/changelog.js'
+        config: '/lint/config/changelog.yml'
+        args: '*'
+        ignore: './one_file.md ./another_file.md' # multiple files must be separated with single space
